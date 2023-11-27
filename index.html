@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1 id="firstline">ROCK PAPER SCISSORS</h1>
+
+    <div class="bg">
+      <div id="begin">
+        <h2>Please enter your name</h2>
+        <input id="userInput" class="nameline" />
+        <br /><br />
+        <button id="playbtn" onClick="startBtn()">PLAY</button>
+      </div>
+    </div>
+
+    <p id="message"></p>
+
+    <div class="selections">
+      <button class="selection" id="R">ROCK</button>
+      <button class="selection" id="P">PAPER</button>
+      <button class="selection" id="S">SCISSORS</button>
+    </div>
+
+    <form>
+      <div id="userLabel">YOU</div>
+      <div id="compLabel">COMP</div>
+      <span id="userScore">0</span>:
+      <span id="compScore">0</span>
+    </form>
+
+    <div class="result">
+      <p></p>
+    </div>
+  </body>
+</html>
