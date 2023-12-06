@@ -2,7 +2,6 @@
 
 
 body {
-    
     text-align: center;
     color: hsl(10, 50%, 50%);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
@@ -10,12 +9,6 @@ body {
 
 #playbtn {
     background-color: burlywood;
-}
-
-#againbtn{
-    background-color: burlywood;
-    margin-top: 120px;
-
 }
 
 .selection {
@@ -36,8 +29,9 @@ div {
 }
 
 .bg {
-    
     background-color: hsl(24, 30%, 82%);
+    margin: 50px;
+    padding: 30px;
 }
 
 .nameline {

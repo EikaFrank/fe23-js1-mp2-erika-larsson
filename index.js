@@ -1,10 +1,18 @@
 //Box for player to whrite name
+const gameForm = document.getElementById('gameForm')
 
 function startBtn() {
     let userInput = document.querySelector("#userInput");
-    let message = document.querySelector("#message");
-    message.innerHTML = `<b>Hello ${userInput.value},</b> best of 3 wins. Let's game!`;
-}
+    const message = document.querySelector("#message");
+
+    message.innerHTML = `<b>Hello ${userInput.value}, best of 3 wins. Let's game!`;
+};
+
+gameForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    startBtn();
+});
+
 
 // The game itself 
 
@@ -16,8 +24,6 @@ const result_div_p = document.querySelector(".result >p")
 const rock_div = document.getElementById("R");
 const paper_div = document.getElementById("P");
 const scissors_div = document.getElementById("S");
-
-
 
 
 rock_div.addEventListener('click', () => game("R"));
@@ -78,10 +84,10 @@ function game(userSelection) {
         case "S" + "S":
             draw(userSelection, compSelection);
             break;
-
     }
 
-    //best of 3 wins
+
+    //Best of 3 wins
 
     const x = 3;
 
